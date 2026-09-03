@@ -1,475 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Believe Tech | Website D
-    
-        <h1>Professional Websites for Your Business</h1></title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #123c69;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
-
-        header p {
-            font-size: 20px;
-            margin: 10px 0 0;
-        }
-
-        nav {
-            background: #0b2d4d;
-            padding: 15px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            max-width: 950px;
-            margin: 25px auto;
-            padding: 40px 25px;
-            background: white;
-            border-radius: 12px;
-        }
-
-        h2 {
-            color: #123c69;
-            text-align: center;
-            margin-top: 0;
-        }
-
-        .hero-text {
-            max-width: 700px;
-            margin: auto;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        .button {
-            display: inline-block;
-            background: #123c69;
-            color: white;
-            padding: 13px 25px;
-            border-radius: 7px;
-            text-decoration: none;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-            margin: 8px;
-        }
-
-        .button:hover {
-            background: #0b2d4d;
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .card {
-            flex: 1;
-            min-width: 220px;
-            padding: 25px;
-            background: #eef4fa;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .card h3 {
-            color: #123c69;
-        }
-
-        .price {
-            font-size: 28px;
-            font-weight: bold;
-            color: #123c69;
-        }
-
-        .contact-box {
-            text-align: center;
-        }
-
-        footer {
-            background: #0b2d4d;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 30px;
-        }
-
-        @media (max-width: 600px) {
-
-            header h1 {
-                font-size: 30px;
-            }
-
-            header p {
-                font-size: 17px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 5px;
-            }
-
-            section {
-                margin: 15px;
-                padding: 30px 18px;
-            }
-
-            .card {
-                width: 100%;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Believe Tech - Professional and affordable website design in Nigeria.">
+<title>Believe Tech | Website Design</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+:root{--blue:#123c69;--dark:#07111f;--light:#f4f7fb;--text:#222;--muted:#64748b;--white:#fff;--accent:#58a6ff;--border:#dbe3ec}
+body{font-family:Arial,sans-serif;background:var(--light);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{background:var(--blue);color:white;text-align:center;padding:55px 20px}
+header h1{font-size:clamp(38px,8vw,70px);margin-bottom:12px}
+header p{font-size:clamp(18px,4vw,28px)}
+nav{background:#0d3155;position:sticky;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.nav-inner{max-width:1100px;margin:auto;display:flex;justify-content:center;align-items:center;padding:15px 20px}
+.nav-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.nav-links a{color:white;font-weight:bold;padding:10px 14px;border-radius:8px}
+.nav-links a:hover{background:rgba(255,255,255,.12);color:var(--accent)}
+.menu-btn{display:none;background:none;border:0;color:white;font-size:28px;cursor:pointer}
+section{max-width:1100px;margin:0 auto;padding:80px 20px}
+.hero{max-width:none;background:white;padding:80px 20px}
+.hero-box{max-width:1000px;margin:auto;text-align:center;background:white;border-radius:24px;padding:55px 30px;box-shadow:0 10px 35px rgba(18,60,105,.10)}
+.hero h2{color:var(--blue);font-size:clamp(34px,6vw,58px);line-height:1.15;margin-bottom:25px}
+.hero p{max-width:800px;margin:0 auto 20px;font-size:20px;color:#444}
+.buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:15px;margin-top:30px}
+.btn{display:inline-block;background:var(--blue);color:white;padding:14px 25px;border-radius:10px;font-weight:bold;border:2px solid var(--blue);transition:.2s}
+.btn:hover{transform:translateY(-2px);background:#0d3155}
+.btn-outline{background:white;color:var(--blue)}
+.section-title{text-align:center;color:var(--blue);font-size:clamp(32px,5vw,46px);margin-bottom:15px}
+.section-intro{max-width:750px;margin:0 auto 40px;text-align:center;color:var(--muted);font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:white;padding:30px 24px;border-radius:16px;border:1px solid var(--border);box-shadow:0 8px 25px rgba(0,0,0,.05)}
+.card h3{color:var(--blue);margin-bottom:10px;font-size:22px}
+.card p{color:#555}
+.price{font-size:30px;font-weight:bold;color:var(--blue);margin:15px 0}
+.card ul{list-style:none;margin:18px 0}
+.card li{margin:9px 0}
+.card li::before{content:"✓ ";color:#16803c;font-weight:bold}
+.why{background:var(--dark);color:white;max-width:none}
+.why-inner{max-width:1100px;margin:auto}
+.why .section-title{color:white}
+.why .section-intro{color:#cbd5e1}
+.why .card{background:#101e30;border-color:#24364d}
+.why .card h3{color:var(--accent)}
+.why .card p{color:#d4dbe5}
+.contact-box{background:white;max-width:750px;margin:auto;padding:35px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.07)}
+.contact-box p{text-align:center;color:var(--muted);margin-bottom:25px}
+.contact-links{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}
+footer{background:#06101c;color:#cbd5e1;text-align:center;padding:30px 20px}
+@media(max-width:760px){
+.nav-inner{justify-content:space-between}
+.menu-btn{display:block}
+.nav-links{display:none;width:100%;flex-direction:column;text-align:center;padding-top:12px}
+.nav-links.show{display:flex}
+.cards{grid-template-columns:1fr}
+.hero-box{padding:40px 20px}
+section{padding:60px 18px}
+}
+</style>
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Believe Tech</h1>
-
-        <p>
-            Professional Website Design in Nigeria
-        </p>
-    </header>
-
-
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#why-us">Why Us</a>
-        <a href="#prices">Prices</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-
-    <!-- HOME -->
-    <section id="home">
-
-        <h2>
-            Professional Websites for Your Business
-        </h2>
-
-        <div class="hero-text">
-
-            <p>
-                I design modern, mobile-friendly websites
-                that help businesses attract customers
-                and grow online.
-            </p>
-
-            <p>
-                Affordable website design for businesses,
-                schools, churches and individuals in Nigeria.
-            </p>
-
-        </div>
-
-        <div class="center">
-
-            <button class="button" onclick="showMessage()">
-                Hire Me
-            </button>
-
-            <a class="button" href="#services">
-                View Services
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-    <section id="about">
-
-        <h2>About Believe Tech</h2>
-
-        <p>
-            My name is Believe. I am a web developer from
-            Nigeria who is learning and building modern
-            websites for individuals and businesses.
-        </p>
-
-        <p>
-            My goal is to help businesses create a strong
-            online presence with websites that are simple,
-            professional and easy to use.
-        </p>
-
-    </section>
-
-
-    <!-- SERVICES -->
-    <section id="services">
-
-        <h2>My Services</h2>
-
-        <div class="services">
-
-            <div class="card">
-                <h3>Business Websites</h3>
-
-                <p>
-                    Professional websites for small and
-                    growing businesses.
-                </p>
-            </div>
-
-
-            <div class="card">
-                <h3>Personal Websites</h3>
-
-                <p>
-                    Personal portfolios and profile websites
-                    for individuals.
-                </p>
-            </div>
-
-
-            <div class="card">
-                <h3>School Websites</h3>
-
-                <p>
-                    Simple websites for schools and
-                    educational organizations.
-                </p>
-            </div>
-
-
-            <div class="card">
-                <h3>Church Websites</h3>
-
-                <p>
-                    Websites for churches to share events,
-                    information and contact details.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- WHY CHOOSE US -->
-    <section id="why-us">
-
-        <h2>Why Choose Believe Tech?</h2>
-
-        <div class="services">
-
-            <div class="card">
-                <h3>📱 Mobile Friendly</h3>
-
-                <p>
-                    Websites designed to work well on
-                    smartphones and computers.
-                </p>
-            </div>
-
-
-            <div class="card">
-                <h3>⚡ Simple & Fast</h3>
-
-                <p>
-                    Clean websites that are easy for
-                    customers to use.
-                </p>
-            </div>
-
-
-            <div class="card">
-                <h3>💰 Affordable</h3>
-
-                <p>
-                    Affordable website solutions for
-                    individuals and small businesses.
-                </p>
-            </div>
-
-
-            <div class="card">
-                <h3>🇳🇬 Nigerian Focus</h3>
-
-                <p>
-                    Website solutions designed with
-                    Nigerian businesses in mind.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PRICES -->
-    <section id="prices">
-
-        <h2>Website Packages</h2>
-
-        <div class="services">
-
-            <div class="card">
-
-                <h3>Starter Website</h3>
-
-                <p class="price">
-                    ₦50,000
-                </p>
-
-                <p>
-                    A simple website for individuals
-                    and small businesses.
-                </p>
-
-                <p>
-                    ✔ Mobile friendly<br>
-                    ✔ Business information<br>
-                    ✔ Services section<br>
-                    ✔ WhatsApp contact
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Business Website</h3>
-
-                <p class="price">
-                    ₦100,000
-                </p>
-
-                <p>
-                    A more complete website for
-                    growing businesses.
-                </p>
-
-                <p>
-                    ✔ Multiple sections<br>
-                    ✔ Mobile friendly<br>
-                    ✔ Contact section<br>
-                    ✔ WhatsApp button<br>
-                    ✔ Professional design
-                </p>
-
-            </div>
-
-        </div>
-
-        <p class="center">
-            Prices can change depending on the features
-            and requirements of each project.
-        </p>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact">
-
-        <h2>Contact Believe Tech</h2>
-
-        <div class="contact-box">
-
-            <p>
-                Ready to create a website for your business?
-            </p>
-
-            <p>
-                Contact me on WhatsApp to discuss your project.
-            </p>
-
-            <!-- REPLACE THE NUMBER BELOW -->
-            <a
-                class="button"
-                href="https://wa.me/2348131538981"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                WhatsApp Me
-
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <p>
-            © 2026 Believe Tech. All rights reserved.
-        </p>
-
-        <p>
-            Website Design & Development
-        </p>
-
-    </footer>
-
-
-    <!-- JAVASCRIPT -->
-    <script>
-
-        function showMessage() {
-
-            alert(
-                "Thank you for visiting Believe Tech! Contact me on WhatsApp to discuss your website."
-            );
-
-        }
-
-    </script>
-
+<header id="home">
+<h1>Believe Tech</h1>
+<p>Professional Website Design in Nigeria</p>
+</header>
+
+<nav>
+<div class="nav-inner">
+<button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+<div class="nav-links" id="navLinks">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#why-us">Why Us</a>
+<a href="#prices">Prices</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<main>
+<section class="hero">
+<div class="hero-box">
+<h2>Professional Websites for Your Business</h2>
+<p>I design modern, mobile-friendly websites that help businesses attract customers and grow online.</p>
+<p>Affordable website design for businesses, schools, churches and individuals in Nigeria.</p>
+<div class="buttons">
+<a class="btn" href="#contact">Hire Me</a>
+<a class="btn btn-outline" href="#services">View Services</a>
+</div>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Believe Tech</h2>
+<p class="section-intro">Believe Tech helps individuals and businesses turn their ideas into clean, professional and useful websites.</p>
+<div class="cards">
+<div class="card"><h3>Modern Design</h3><p>Clean layouts designed to make your business look professional online.</p></div>
+<div class="card"><h3>Mobile Friendly</h3><p>Your website will work properly on phones, tablets and computers.</p></div>
+<div class="card"><h3>Affordable</h3><p>Simple website solutions designed to fit different budgets.</p></div>
+</div>
+</section>
+
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<p class="section-intro">Choose the website service that matches your needs.</p>
+<div class="cards">
+<div class="card"><h3>Business Websites</h3><p>Professional websites for companies, shops and entrepreneurs.</p></div>
+<div class="card"><h3>Personal Websites</h3><p>Personal portfolios, CV websites and online profiles.</p></div>
+<div class="card"><h3>School & Church Websites</h3><p>Informative websites for schools, churches and organizations.</p></div>
+<div class="card"><h3>Website Redesign</h3><p>Improve an old website with a cleaner and more modern design.</p></div>
+<div class="card"><h3>Landing Pages</h3><p>Focused pages for products, services, campaigns and promotions.</p></div>
+<div class="card"><h3>Website Updates</h3><p>Help with text, layout and basic content updates on existing websites.</p></div>
+</div>
+</section>
+
+<section class="why" id="why-us">
+<div class="why-inner">
+<h2 class="section-title">Why Choose Believe Tech?</h2>
+<p class="section-intro">I focus on creating websites that are simple, professional and easy for customers to use.</p>
+<div class="cards">
+<div class="card"><h3>Professional</h3><p>Your website gets a clean design that represents your brand well.</p></div>
+<div class="card"><h3>Responsive</h3><p>Your site is designed to look good on different screen sizes.</p></div>
+<div class="card"><h3>Easy to Use</h3><p>Visitors can quickly understand your services and contact you.</p></div>
+</div>
+</div>
+</section>
+
+<section id="prices">
+<h2 class="section-title">Website Packages</h2>
+<p class="section-intro">These are starting packages. The final price depends on the project.</p>
+<div class="cards">
+<div class="card">
+<h3>Basic</h3><div class="price">₦50,000+</div>
+<ul><li>Simple website</li><li>Mobile-friendly design</li><li>Basic contact section</li><li>Clean professional layout</li></ul>
+<a class="btn" href="#contact">Ask About Basic</a>
+</div>
+<div class="card">
+<h3>Business</h3><div class="price">₦100,000+</div>
+<ul><li>Multi-section website</li><li>Mobile-friendly design</li><li>Services and pricing</li><li>Contact section</li></ul>
+<a class="btn" href="#contact">Ask About Business</a>
+</div>
+<div class="card">
+<h3>Custom</h3><div class="price">Let's Talk</div>
+<ul><li>Custom website design</li><li>Special features</li><li>Custom sections</li><li>Project-based pricing</li></ul>
+<a class="btn" href="#contact">Request a Quote</a>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Let's Work Together</h2>
+<div class="contact-box">
+<p>Have an idea? Believe it. Build it. Contact Believe Tech to discuss your website project.</p>
+<div class="contact-links">
+<!-- Replace YOUR-EMAIL@example.com with your real email address. -->
+<a class="btn" href="mailto:YOUR-EMAIL@example.com">Email Me</a>
+<a class="btn btn-outline" href="#home">Back to Top</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<p>&copy; <span id="year"></span> Believe Tech. All rights reserved.</p>
+</footer>
+
+<script>
+function toggleMenu(){
+document.getElementById("navLinks").classList.toggle("show");
+}
+document.querySelectorAll("#navLinks a").forEach(function(link){
+link.addEventListener("click",function(){
+document.getElementById("navLinks").classList.remove("show");
+});
+});
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
 </body>
-
-</f>
+</html>
